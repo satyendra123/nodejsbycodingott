@@ -30,4 +30,6 @@ const login = (email, password) => {
 
 login("satyendra@gmail.com","sid123")
 
-Note mai kuch is tarah se bhi kar sakta tha is chiz ko. mai find ki jagah par filter method ka bhi use kar sakta hu. so difference kya hai find or filter me
+Note mai kuch is tarah se bhi kar sakta tha is chiz ko. mai find ki jagah par filter method ka bhi use kar sakta hu. so difference kya hai find or filter me. so difference yeh hai ki
+find jo hai wo kewal ek value return karta hai jo usko pahle mil gya. jabki jo filter hai wo un sari values ko return karega jo usse match krengi
+
