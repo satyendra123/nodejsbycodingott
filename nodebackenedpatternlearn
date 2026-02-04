@@ -14,7 +14,7 @@ const data = [
   { name: "kalika", email:"kalika@gmail.com", password:"kalika123", age: 89, address: "delhi" },
   { name: "sagar", email:"sagar@gmail.com", password:"sagar123", age: 96, address: "agra" },
   { name: "ram", email:"ram@gmail.com", password:"ram123", age: 25, address: "delhi" },
-  { name: "satyendra", email:"satyendra@gmail.com", password:"sid123", age: 56, address: "delhi" },
+  { name: "satyendra", email:"satyendra@gmail.com", password:"sid123", age: 56, address: "UP" },
 ];
 
 const login = (email, password) => {
@@ -40,5 +40,5 @@ so agar mai console.log(user) karta hu find aur filter karne ke bad so filter me
 with filter method                                                                                    with find method
 [                                                                                                        [
   { name: 'satyendra', email: 'satyendra@gmail.com', password: 'sid123',age: 56,address: 'delhi'},         { name: 'satyendra', email: 'satyendra@gmail.com', password: 'sid123',age: 56,address: 'delhi'},
-  { name: 'satyendra', email: 'satyendra@gmail.com', password: 'sid123',age: 56,address: 'delhi'}        ]
+  { name: 'satyendra', email: 'satyendra@gmail.com', password: 'sid123',age: 56,address: 'UP'}        ]
 ]
