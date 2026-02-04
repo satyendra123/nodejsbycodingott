@@ -1,0 +1,33 @@
+
+Q. isme hum dekhte hai ki man lo itna sara data hai user ka usme se hume check karna hai ki username aur password sahi hai yaa nahi to uske liye humne ye code likha hai. to validate the user
+const data = [                                                                                                   
+  { name: "satyendra", email:"satyendra@gmail.com", password:"sid123", age: 56, address: "delhi" },
+  { name: "sandhya", email:"sandhya@gmail.com", password:"sandhya123", age: 23, address: "noida" },
+  { name: "kalika", email:"kalika@gmail.com", password:"kalika123", age: 89, address: "delhi" },
+  { name: "sagar", email:"sagar@gmail.com", password:"sagar123", age: 96, address: "agra" },
+  { name: "ram", email:"ram@gmail.com", password:"ram123", age: 25, address: "delhi" },
+];
+
+const data = [
+  { name: "satyendra", email:"satyendra@gmail.com", password:"sid123", age: 56, address: "delhi" },
+  { name: "sandhya", email:"sandhya@gmail.com", password:"sandhya123", age: 23, address: "noida" },
+  { name: "kalika", email:"kalika@gmail.com", password:"kalika123", age: 89, address: "delhi" },
+  { name: "sagar", email:"sagar@gmail.com", password:"sagar123", age: 96, address: "agra" },
+  { name: "ram", email:"ram@gmail.com", password:"ram123", age: 25, address: "delhi" },
+];
+
+const login = (email, password) => {
+          const user = data.find((u)=>{
+              return u.email===email && u.password===password
+          })
+          if(user){
+              console.log("user is validated")
+          }
+          else{
+              console.log("wrong username and password")
+          }
+};
+
+login("satyendra@gmail.com","sid123")
+
+Note mai kuch is tarah se bhi kar sakta tha is chiz ko. mai find ki jagah par filter method ka bhi use kar sakta hu. so difference kya hai find or filter me
