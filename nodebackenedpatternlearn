@@ -14,12 +14,14 @@ const data = [
   { name: "kalika", email:"kalika@gmail.com", password:"kalika123", age: 89, address: "delhi" },
   { name: "sagar", email:"sagar@gmail.com", password:"sagar123", age: 96, address: "agra" },
   { name: "ram", email:"ram@gmail.com", password:"ram123", age: 25, address: "delhi" },
+  { name: "satyendra", email:"satyendra@gmail.com", password:"sid123", age: 56, address: "delhi" },
 ];
 
 const login = (email, password) => {
           const user = data.find((u)=>{
               return u.email===email && u.password===password
           })
+          console.log(user)
           if(user){
               console.log("user is validated")
           }
@@ -32,4 +34,11 @@ login("satyendra@gmail.com","sid123")
 
 Note mai kuch is tarah se bhi kar sakta tha is chiz ko. mai find ki jagah par filter method ka bhi use kar sakta hu. so difference kya hai find or filter me. so difference yeh hai ki
 find jo hai wo kewal ek value return karta hai jo usko pahle mil gya. jabki jo filter hai wo un sari values ko return karega jo usse match krengi
+suppose karo ki same bar do data hai isi mail aur password ke sath to filter method un dono value ko return karega jabki jo find hai jo sabse pahli value usko milegi wo return krega
 
+so agar mai console.log(user) karta hu find aur filter karne ke bad so filter me mujhe ye milega
+with filter method                                                                                    with find method
+[                                                                                                        [
+  { name: 'satyendra', email: 'satyendra@gmail.com', password: 'sid123',age: 56,address: 'delhi'},         { name: 'satyendra', email: 'satyendra@gmail.com', password: 'sid123',age: 56,address: 'delhi'},
+  { name: 'satyendra', email: 'satyendra@gmail.com', password: 'sid123',age: 56,address: 'delhi'}        ]
+]
