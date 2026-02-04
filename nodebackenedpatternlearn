@@ -8,7 +8,7 @@ const data = [
   { name: "ram", email:"ram@gmail.com", password:"ram123", age: 25, address: "delhi" },
   { name: "satyendra", email:"satyendra@gmail.com", password:"sid123", age: 56, address: "delhi" },
 ];
-
+                                                                                                     sql-query=> select * from user where email='' and password='' LIMIT 1
 const login = (email, password) => {                                                                 app.get('/login' async(req,res)=>{
           const user = data.find((u)=>{                                                                  try{
               return u.email===email && u.password===password                                                  const { email, password } = req.body;
@@ -17,7 +17,7 @@ const login = (email, password) => {                                            
           if(user){                                                                                                     return res.status(200).json({message: "User validated",user: user});
               console.log("user is validated")                                                                       }
           }                                                                                                    else {
-          else{                                                                                                        return res.status(200).json({message: "User validated",user: user});
+          else{                                                                                                        return res.status(401).json({message: "wrong username and password"});
               console.log("wrong username and password")                                                            }
           }                                                                                                   }
 };                                                                                                        catch(error){
